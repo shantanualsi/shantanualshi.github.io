@@ -4,10 +4,53 @@ description: ""
 baseurl: "" 
 url: https://blog.shantanualshi.com 
 twitter_username: shantanualshi
-github_username: shantanualsi 
+github_username: shantanualsi
+disqus_shortname: stackproblems
+google_analytics: UA-XXXXXXXX-Y
 
-# Build settings
-theme: minima
-plugins:
-  - jekyll-feed
+enableTags: true
+tagarray: []
 
+collections:
+  project:
+    output: true
+    permalink: /project/:path/
+
+social:
+    - icon: fa-facebook
+      link: "#"
+    - icon: fa-twitter
+      link: "#"
+    - icon: fa-linkedin
+      link: "#"
+    - icon: fa-stack-exchange
+      link: "#"
+    - icon: fa-github
+      link: "https://github.com/agusmakmun"
+
+share:
+  twitter_username: github.io
+  fb_appid: 1749788565247320
+
+urls:
+    - text: About Me
+      url: /about/
+    - text: My Projects
+      url: /projects/
+    - text: XML Feed
+      url: /feed.xml
+
+paginate: 20
+per_page: 20
+paginate_path: "/page/:num/"
+markdown: kramdown
+gems:
+  - jekyll-paginate
+  - jekyll-gist
+
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+  endings: all
+  ignore:
+    envs: ['development']
